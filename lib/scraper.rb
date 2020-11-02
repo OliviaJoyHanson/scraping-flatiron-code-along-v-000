@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
+require 'pry'
 
 class Scraper
 
@@ -13,6 +14,7 @@ class Scraper
 
   def make_courses
     get_courses.each do |course|
+      binding.pry
       course = Course.new
     end
   end
