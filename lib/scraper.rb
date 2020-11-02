@@ -14,7 +14,7 @@ class Scraper
 
   def make_courses
     get_courses.each do |course|
-      binding.pry
+      #binding.pry
       course.text = Course.new
     end
   end
